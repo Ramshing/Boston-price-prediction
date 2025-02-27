@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Score Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Boston Price Predictor</h2>
+    <form action="/predict" method="post">
+      <!--<label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>-->
+
+      <label for="CRIM">CRIM:</label>
+      <input type="text" id="CRIM" name="CRIM" placeholder="Enter CRIM">
+      <label for="ZN">ZN:</label>
+      <input type="text" id="ZN" name="ZN" placeholder="Enter ZN">
+      <label for="INDUS">INDUS:</label>
+      <input type="text" id="INDUS" name="INDUS" placeholder="Enter INDUS">
+      <label for="CHAS">CHAS:</label>
+      <input type="text" id="CHAS" name="CHAS" placeholder="Enter CHAS">
+      <label for="NOX">NOX:</label>
+      <input type="text" id="NOX" name="NOX" placeholder="Enter NOX">
+      <label for="RM">RM:</label>
+      <input type="text" id="RM" name="RM" placeholder="Enter RM">
+      <label for="AGE">AGE:</label>
+      <input type="text" id="AGE" name="AGE" placeholder="Enter AGE">
+      <label for="DIS">DIS:</label>
+      <input type="text" id="DIS" name="DIS" placeholder="Enter DIS">
+      <label for="RAD">RAD:</label>
+      <input type="text" id="RAD" name="RAD" placeholder="Enter RAD">
+      <label for="TAX">TAX:</label>
+      <input type="text" id="TAX" name="TAX" placeholder="Enter TAX">
+      <label for="PATRATIO">PATRATIO:</label>
+      <input type="text" id="PATRATIO" name="PATRATIO" placeholder="Enter PATRATIO">
+      <label for="B">B:</label>
+      <input type="text" id="B" name="B" placeholder="Enter B">
+      <label for="LSTAT">LSTAT:</label>
+      <input type="text" id="LSTAT" name="LSTAT" placeholder="Enter LSTAT">
+      <button type="submit" class="submit-btn" value='Submit'>Submit</button>
+    </form>
+  </div>
+</body>
+</html>
